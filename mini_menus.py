@@ -53,6 +53,9 @@ def add_product_in_menu():
     Products.create_product(product_name, product_price, product_category, product_quantity)
 
 def remove_product_from_menu():
+    print("\n")
+    display_products()
+    print("\n")
     product_name = input("Enter the product name you want to remove: ")
     Products.delete_product(product_name)
 
@@ -61,6 +64,9 @@ def display_products():
 
 
 def place_an_order():
+    print("\n")
+    display_products()
+    print("\n")
     product_name = input("Enter the product name you want to order: ")
     product_quantity = input("Enter the product quantity you want to order: ")
     product_destination = input("Enter the destination of the order: ")

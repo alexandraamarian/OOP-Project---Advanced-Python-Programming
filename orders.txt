@@ -1,1 +1,3 @@
 "{\"product\": \"Phone\", \"quantity\": \"2\", \"destination\": \"Viilor 4\"}"
+"{\"product\": \"Boxa\", \"quantity\": \"3\", \"destination\": \"Bucegi 1\"}"
+"{\"product\": \"Iphone 14\", \"quantity\": \"2\", \"destination\": \"Bucegi 1\"}"

@@ -1,1 +1,1 @@
-"{\"name\": \"Phone\", \"price\": \"200\", \"category\": \"Mobile\", \"quantity\": \"5\"}"
+"{\"name\": \"Iphone 14\", \"price\": \"500\", \"category\": \"Mobile\", \"quantity\": \"5\"}"
