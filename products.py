@@ -30,7 +30,7 @@ class Products:
         try:
             products = cls.load_products()
             for product in products:
-                print(product.name + " with price: " + product.price+". Pieces left: "+product.quantity)
+                print(f"{product.name} with price: {product.price}. Pieces left: {product.quantity}")
         except JSONDecodeError as e:
             products = None
 

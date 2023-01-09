@@ -64,9 +64,8 @@ def display_products():
 
 
 def place_an_order():
-    print("\n")
+    print("\n Products in stock: \n")
     display_products()
-    print("\n")
     product_name = input("Enter the product name you want to order: ")
     product_quantity = input("Enter the product quantity you want to order: ")
     product_destination = input("Enter the destination of the order: ")

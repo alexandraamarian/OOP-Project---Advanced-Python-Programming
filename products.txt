@@ -1,1 +1,5 @@
-"{\"name\": \"Iphone 14\", \"price\": \"500\", \"category\": \"Mobile\", \"quantity\": \"5\"}"
+"{\"name\": \"Iphone 13\", \"price\": \"500\", \"category\": \"Mobile\", \"quantity\": \"5\"}"
+"{\"name\": \"Iphone 14\", \"price\": \"600\", \"category\": \"Mobile\", \"quantity\": \"5\"}"
+"{\"name\": \"Iphone 11\", \"price\": \"300\", \"category\": \"Mobile\", \"quantity\": \"2\"}"
+"{\"name\": \"Iphone 12\", \"price\": \"400\", \"category\": \"Mobile\", \"quantity\": \"3\"}"
+"{\"name\": \"Iphone X\", \"price\": \"200\", \"category\": \"Mobile\", \"quantity\": \"5\"}"

@@ -28,10 +28,10 @@ class Product:
         self.quantity = quantity
         
     def __str__(self):
-         return f"{self.name}, {self.material}, {self.category}, {self.quantity}"
+         return f"{self.name}, {self.price}, {self.category}, {self.quantity}"
 
     def __repr__(self):
-        return "Product('{}', '{}', '{}', '{}')".format(self.name, self.material, self.category, self.quantity)
+        return "Product('{}', '{}', '{}', '{}')".format(self.name, self.price, self.category, self.quantity)
 
     def __eq__(self, other):
         if(isinstance(other, Product)):
