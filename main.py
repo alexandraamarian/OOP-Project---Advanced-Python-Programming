@@ -1,9 +1,7 @@
-from category import Category
-from categories import Categories
-from json import JSONDecodeError
-import the_menu
+from the_menu import print_main_menu
 
 
 
 if __name__ == "__main__":
-    pass
+    print_main_menu()
+

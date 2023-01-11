@@ -1,3 +1,5 @@
-"{\"product\": \"Iphone 11\", \"quantity\": \"1\", \"destination\": \"Viilor\"}"
-"{\"product\": \"Iphone 11\", \"quantity\": \"2\", \"destination\": \"Bucegi 1\"}"
-"{\"product\": \"Iphone 12\", \"quantity\": \"2\", \"destination\": \"Bucegi\"}"
+"{\"product\": \"Iphone\", \"quantity\": \"2\", \"destination\": \"Viilor\"}"
+"{\"product\": \"Macbook air\", \"quantity\": \"2\", \"destination\": \"severin\"}"
+"{\"product\": \"Airpods 2\", \"quantity\": \"2\", \"destination\": \"baia mare\"}"
+"{\"product\": \"Airpods 1\", \"quantity\": \"2\", \"destination\": \"timisoara\"}"
+"{\"product\": \"Iphone 13\", \"quantity\": \"2\", \"destination\": \"bacau\"}"

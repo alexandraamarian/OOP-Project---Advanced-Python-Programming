@@ -1,0 +1,2 @@
+"{\"name\": \"Airpods 2\", \"price\": \"300\", \"category\": \"Headphones\", \"quantity\": \"3\", \"brand\": \"Apple\", \"model\": \"2\", \"battery\": \"1 week\"}"
+"{\"name\": \"Airpods 1\", \"price\": \"300\", \"category\": \"Headphones\", \"quantity\": \"4\", \"brand\": \"Apple\", \"model\": \"1\", \"battery\": \"4 days\"}"

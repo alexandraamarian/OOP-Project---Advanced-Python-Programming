@@ -1,0 +1,1 @@
+"{\"name\": \"Macbook air\", \"price\": \"200\", \"category\": \"Laptops\", \"quantity\": \"1\", \"brand\": \"Apple\", \"model\": \"air\", \"camera\": \"good\"}"

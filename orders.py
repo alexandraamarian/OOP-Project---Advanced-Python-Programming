@@ -1,7 +1,8 @@
 from json import JSONEncoder, JSONDecoder, JSONDecodeError, decoder, dump, loads
 import order
 import products
-
+from products import Products
+from product import Laptop, Headphones, Mobile
 class Encoder(JSONEncoder):
     """ from a Python object we need to obtain a json representation"""
     def default(self, o):
@@ -50,18 +51,46 @@ class Orders:
     @classmethod
     def create_order(cls, name, quantity, destionation):
         """ creates a new order object and adds it to the orders collection """
-        productss = products.Products.load_products()
+        laptop_products = list(filter( lambda x: isinstance(x, Laptop),Products.load_products(3)))
+        headphone_products = list(filter( lambda x: isinstance(x,Headphones ),Products.load_products(2)))
+        mobile_products = list(filter( lambda x: isinstance(x, Mobile),Products.load_products(1)))
         try:
             k=0
-            for prod in productss:
+            for prod in mobile_products:
+                no=1
                 if prod.name == name:
                     k=1
                     cls.add_order(order.Order(name, quantity, destionation))
                     prod.quantity = int(prod.quantity) - int(quantity)
-                    products.Products.delete_product(name)
-                    products.Products.create_product(prod.name, prod.price, prod.category, str(prod.quantity))
+                    products.Products.delete_product(name,no)
+                    data = [prod.name, prod.price, prod.category, str(prod.quantity), prod.brand, prod.model, prod.color]
+                    products.Products.create_product(data, no)
+
+            for prod in headphone_products:
+                no=2
+                if prod.name == name:
+                    k=1
+                    cls.add_order(order.Order(name, quantity, destionation))
+                    prod.quantity = int(prod.quantity) - int(quantity)
+                    products.Products.delete_product(name,no)
+                    data = [prod.name, prod.price, prod.category, str(prod.quantity), prod.brand, prod.model, prod.battery]
+                    products.Products.create_product(data , no)
+
+            for prod in laptop_products:
+                    no=3
+                    if prod.name == name:
+                        k=1
+                        cls.add_order(order.Order(name, quantity, destionation))
+                        prod.quantity = int(prod.quantity) - int(quantity)
+                        products.Products.delete_product(name,no)
+                        data = [prod.name, prod.price, prod.category, str(prod.quantity), prod.brand, prod.model, prod.camera]
+                        products.Products.create_product(data, no)
             if k!=1:
                 print("\n Product not found. Please try again with a product that is in stock. \n")
+                
         except JSONDecodeError as e:
-            productss = None        
+            laptop_products = None      
+            headphone_products = None
+            mobile_products = None
+
             

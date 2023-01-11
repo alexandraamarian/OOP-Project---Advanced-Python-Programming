@@ -1,0 +1,1 @@
+"{\"name\": \"Iphone 13\", \"price\": \"500\", \"category\": \"Mobile\", \"quantity\": \"3\", \"brand\": \"Apple\", \"model\": \"Black\", \"color\": \"13\"}"

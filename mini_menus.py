@@ -46,21 +46,37 @@ def display_categories():
 
 
 def add_product_in_menu():
-    product_name = input("Enter the product name you want to add: ")
-    product_price = input("Enter the product price you want to add: ")
-    product_category = input("Enter the product category: ")
-    product_quantity = input("Enter the product quantity: ")
-    Products.create_product(product_name, product_price, product_category, product_quantity)
+    l=[]
+    print("Choose the preferred category: \n1. Mobiles\n2. Headphones\n3. Laptops\n")
+    no = int(input("Enter an option between 1 and 3: "))
+    l.append(input("Enter the product name you want to add: ")) 
+    l.append(input("Enter the product price you want to add: ")) 
+    l.append(input("Enter the product category: "))
+    l.append(input("Enter the product quantity: "))
+    l.append(input("Enter the product brand: "))
+    l.append(input("Enter the product model: ")) 
+    if no == 1: 
+        l.append(input("Enter the product color: "))
+    elif no == 2:
+        l.append(input("Enter the product battery: "))
+    elif no == 3:
+        l.append(input("Enter the product camera: "))
+    
+    Products.create_product(l,no)
 
 def remove_product_from_menu():
+    print("Choose the preferred category: \n1. Mobiles\n2. Headphones\n3. Laptops\n")
+    no = int(input("Enter an option between 1 and 3: "))
     print("\n")
-    display_products()
+    Products.display_products(no)
     print("\n")
     product_name = input("Enter the product name you want to remove: ")
-    Products.delete_product(product_name)
+    Products.delete_product(product_name,no)
 
 def display_products():
-    Products.display_products()
+    print("Choose the preferred category: \n1. Mobiles\n2. Headphones\n3. Laptops\n")
+    no = int(input("Enter an option between 1 and 3: "))
+    Products.display_products(no)
 
 
 def place_an_order():

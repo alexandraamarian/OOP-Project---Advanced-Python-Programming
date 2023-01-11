@@ -30,5 +30,3 @@ def exit_click():
 def error_handler():
     print("Action not supported")
 
-
-print_main_menu()
